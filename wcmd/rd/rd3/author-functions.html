@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordPress Code Author Functions</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>WordPress Code Author Functions</h1>
+        </header>
+
+        <main>
+            <section>
+                <h2>The <code>the_author()</code> Function</h2>
+                <p>We use this function to display the authors name of the current post. This just shows who wrote each post. </p>
+            </section>
+
+            <section>
+                <h2>The <code>the_author_link()</code> Function</h2>
+                <p>This function is similar to <code>the_author()</code> but gives it a little somthing extra. Now it will display the author's name as a clickable link the brings you directly to that author's archive page. From there you can see all posts by said author.</p>
+            </section>
+
+            <section>
+                <h2>Differences and Similarities</h2>
+                <p>Both of these functions display the authors name. Differences between the two would be <code>the_author()</code> only outputs the author's name as plain text. While <code>the_author_link()</code> wraps the author's name in an anchor tag which makes it a clickable link.</p>
+                <p>Similarities between the two would be they both rely on the current post in the WordPress loop to determine which author to display and neither function requires any parameters to work.</p>
+            </section>
+
+            <section>
+                <h2>Summary</h2>
+                <p>In wordpress you can use both <code>the_author()</code> and <code>the_author_link()</code> to display author info. You should use one or the other to give attribution to content and to its creators. If you don't want or need to provide access to all of an author's posts use <code>the_author()</code> if you do need or want to use <code>the_author_link()</code>.</p>
+            </section>
+
+            
+        </main>
+
+        <footer>
+            <a href="/wfed1/index.html">&copy; 2024 - Trevor</a>
+            <a href="javascript:location='https://jigsaw.w3.org/css-validator/validator?uri='+escape(location)">CSS</a>
+            <a href="javascript:location='https://validator.w3.org/nu/?doc='+escape(location)">HTML</a>
+        </footer>
+    </div>
+</body>
+
+</html>

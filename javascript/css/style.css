@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: minmax(auto, 1024px);
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.wrapper {
+    display: grid;
+    gap: 20px
+}
+
+nav,
+footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a,
+footer a {
+    line-height: 2;
+    padding: 0 1em;
+    background: lightgray;
+}
+
+nav :first-child,
+footer :first-child {
+    margin-right: auto;
+}
+
+p,
+li {
+    max-width: 70ch;
+    line-height: 1.8;
+}
+
+@media screen and (min-width: 768px) {
+    .wrapper {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    header,
+    nav,
+    footer {
+        grid-column: span 6;
+        flex-direction: row;
+    }
+
+    main {
+        grid-column: span 4;
+    }
+
+    aside {
+        grid-column: span 2;
+    }
+}

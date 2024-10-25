@@ -1,0 +1,230 @@
+body {
+    background-color: #8c7535;
+}
+
+video {
+    float: right;
+}
+
+.tabletext {
+    text-align: right;
+}
+
+table {
+    float: right;
+    width: 70%;
+    border-collapse: collapse;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 15px;
+}
+
+th {
+    background-color: #473005;
+    color: white;
+    font-size: 35px;
+    padding: 12px
+}
+
+th[colspan="2"] {
+    text-align: center;
+    border: 2px solid black;
+}
+
+td {
+    border: 2px solid black;
+    padding: 8px;
+    vertical-align: top;
+}
+
+td div {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+td:first-child {
+    font-weight: bold;
+    width: 30%;
+}
+
+tr:nth-child(even) {
+    background-color: #7d6142;
+}
+tr:nth-child(odd) {
+    background-color: #a8845b;
+}
+tr:hover {
+    background-color: #ddd;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input [type="number"], select, textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    background-color: #8CB369;
+    border-radius: 15px;
+    box-shadow: 2px 2px 15px #332b14;
+    text-align: center;
+    padding: 15px;
+    margin:auto;
+    width: 1000px;
+    border: 1px solid black;
+}
+
+#title {
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+#introparagraph {
+    background-color: #F9E4B7;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+ol {
+    list-style: none;
+    padding: 0;
+}
+
+ol li {
+    box-sizing: border-box;
+}
+
+ol li a {
+    display: block;
+    background-color: #F9E4B7;
+    background-repeat: no-repeat;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    margin-right: 800px;
+    margin-left: 50px;
+}
+
+
+
+#africa {
+    background-image: url(images/africa.jpg);
+    background-size: 25% 100%;
+    background-repeat: no-repeat;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+#africa a {
+    transform: rotate(5deg);
+    display: block;
+}
+
+#antarctica {
+    background-image: url(images/antarctica.jpg);
+    background-repeat: no-repeat;
+    background-size: 25% 100%;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+#antarctica a {
+    transform: rotate(-5deg);
+    display: block;
+}
+
+#asia {
+    background-image: url(images/asia.jpg);
+    background-repeat: no-repeat;
+    background-size: 25% 100%;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+#asia a {
+    transform: rotate(5deg);
+    display: block;
+}
+
+#australia {
+    background-image: url(images/australia.jpg);
+    background-repeat: no-repeat;
+    background-size: 25% 100%;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+#australia a {
+    transform: rotate(-5deg);
+    display: block;
+}
+
+#europe {
+    background-image: url(images/europe.jpg);
+    background-repeat: no-repeat;
+    background-size: 25% 100%;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+#europe a {
+    transform: rotate(5deg);
+    display: block;
+}
+
+#northamerica {
+    background-image: url(images/northamerica.jpg);
+    background-repeat: no-repeat;
+    background-size: 25% 100%;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+#northamerica a {
+    transform: rotate(-5deg);
+    display: block;
+}
+
+#southamerica {
+    background-image: url(images/southamerica.jpg);
+    background-repeat: no-repeat;
+    background-size: 25% 100%;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+#southamerica a {
+    transform: rotate(5deg);
+    display: block;
+}
+
+footer {
+    margin-top: 15px;
+    color: black;
+    text-align: left;
+    background-color: #876813;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 11px;
+}

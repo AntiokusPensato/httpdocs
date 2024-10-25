@@ -1,0 +1,130 @@
+html {
+      background-color: #5E6D55}
+
+body {
+      color: #ab7e4c;
+      font-family: "Times New Roman", sans-serif;
+}
+
+#wrapper {
+          background: linear-gradient(to bottom, #666666, #555555);
+          border-radius: 15px;
+          box-shadow: 2px 2px 15px #332b14;
+          text-align: center;
+          padding: 20px;
+          margin:auto;
+          width: 1000px;
+}
+
+main {
+	    float: right;
+	     width: 790px;
+}
+
+main h3 {
+         margin-right: 200px;
+         margin-left: 180px;
+}
+
+main p {
+        text-align: left;
+}
+
+#logo-container {
+                 background-color: white;
+                 border-radius: 15px;
+                 margin: 0px 550px 10px 0px;
+                 align-items: center;
+}
+
+#logo-container img {
+                     width: 400px;
+                     height: 100px;
+}
+#businessname {
+               color: #eab676;
+               background-color: #4c3c30;
+               font-family: fantasy;
+}
+
+.species {
+          background-color: #475577;
+          border-radius: 20px;
+          color: #ccca89;
+          font-size: 125%;
+          padding: 3px;
+}
+
+nav {
+     margin-right: 800px;
+}
+
+nav:after {
+          display: table;
+          clear: both;
+}
+
+nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+}
+
+nav li {
+        margin-bottom: 10px;
+}
+
+nav a {
+       display: block;
+       padding: 10px;
+       color: black;
+       background-color: #407080;
+       transition: background-color 0.3s ease-in-out;
+}
+
+nav a:visited {
+	         background-color: white;
+	         color: gray;
+}
+
+nav a:hover {
+	       font-size: 1.4em;
+	       background-color: gray;
+	       color: white;
+}
+
+nav a:active {
+	       color: green;
+}
+
+.animalgallery {
+                background-color: #475577;
+                float: left;
+                width: 200px;
+                height: 155px;
+                margin-right: 20px;
+                margin-left: 38px;
+                list-style: none;
+                border-radius: 20px;
+                box-shadow: 2px 2px 8px #000000;
+                margin-bottom: 10px;
+                padding: 15px;
+}
+
+.animalgallery li img {
+                       max-width: 300px;
+                       max-height: 300px;
+}
+
+#animals {
+          width: 600px;
+          margin: 20px auto;
+}
+
+#wait {
+       clear: left;
+}
+
+footer {
+	      clear: both;
+}

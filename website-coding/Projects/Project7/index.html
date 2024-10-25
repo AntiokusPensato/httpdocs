@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="master.css">
+	<title> Continents of the World</title>
+</head>
+
+<body>
+	<div id="wrapper">
+	<h1><img src="images/cow_logo.png" alt="Continents of the World"></h1>
+
+	<p id="introparagraph">Earth is a special place for all of us. I'd bet we have all lived here our whole life! It is time we get to know this place a little better. Let's explore the 7 continents of the Earth. Let's figure out what hemisphere each continent is in while we're at it.</p>
+
+	<form action="https://webdevbasics.net/scripts/demo.php" method="post">
+  <table>
+    <tr>
+      <td><div class="tabletext"><label for="firstName">First Name:</label></div></td>
+      <td><input type="text" id="firstName" name="firstName" required></td>
+    </tr>
+    <tr>
+      <td><div class="tabletext"><label for="lastName">Last Name:</label></div></td>
+      <td><input type="text" id="lastName" name="lastName" required></td>
+    </tr>
+    <tr>
+      <td><div class="tabletext"><label for="email">Email Address:</label></div></td>
+      <td><input type="email" id="email" name="email" required></td>
+    </tr>
+    <tr>
+      <td><div class="tabletext"><label for="phone">Phone:</label></div></td>
+      <td><input type="tel" id="phone" name="phone"></td>
+    </tr>
+    <tr>
+      <td><div class="tabletext"><label for="preferredTravel">Mode of Preferred Travel:</label></div></td>
+      <td>
+        <select id="preferredTravel" name="preferredTravel" required>
+          <option value="">Please choose a Travel Mode</option>
+          <option value="air">Air</option>
+          <option value="car">Car</option>
+          <option value="train">Train</option>
+          <option value="bus">Bus</option>
+        </select>
+      </td>
+    </tr>
+		<tr>
+  		<td><div class="tabletext">Continents of Interest:</div></td>
+  		<td>
+      		<div><label><input type="checkbox" name="continentsOfInterest" value="africa1" required> Africa</label></div>
+      		<div><label><input type="checkbox" name="continentsOfInterest" value="antarctica1" required> Antarctica</label></div>
+      		<div><label><input type="checkbox" name="continentsOfInterest" value="asia1" required> Asia</label></div>
+      		<div><label><input type="checkbox" name="continentsOfInterest" value="australia1" required> Australia</label></div>
+      	  <div><label><input type="checkbox" name="continentsOfInterest" value="europe1" required> Europe</label></div>
+      		<div><label><input type="checkbox" name="continentsOfInterest" value="northamerica1" required> North America</label></div>
+      		<div><label><input type="checkbox" name="continentsOfInterest" value="southamerica1" required> South America</label></div>
+  		</td>
+		</tr>
+    <tr>
+      <td><div class="tabletext"><label for="travelStartDate">Preferred Travel Start Date:</label></div></td>
+      <td><input type="date" id="travelStartDate" name="travelStartDate" required></td>
+    </tr>
+    <tr>
+      <td><div class="tabletext"><label for="numberOfDays">Number of Days for Trip:</label></div></td>
+      <td><div><input type="number" id="numberOfDays" name="numberOfDays" min="1" required></div></td>
+    </tr>
+    <tr>
+      <td><div class="tabletext"><label for="comments">Comments:</label></div></td>
+      <td><textarea id="comments" name="comments"></textarea></td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center;">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear Form">
+      </td>
+    </tr>
+  </table>
+</form>
+
+	<ol>
+		<li id="africa"><a href="equator/africa/index.html">Africa</a></li>
+		<li id="antarctica"><a href="southern/antarctica/index.html">Antarctica</a></li>
+		<li id="asia"><a href="northern/northeast/asia/index.html">Asia</a></li>
+		<li id="australia"><a href="southern/southeast/australia/index.html">Australia</a></li>
+		<li id="europe"><a href="northern/europe/index.html">Europe</a></li>
+		<li id="northamerica"><a href="northern/northwest/north_america/index.html">North America</a></li>
+		<li id="southamerica"><a href="equator/western/south_america/index.html">South America</a></li>
+	</ol>
+	<p>Copyright &copy; 2023 Trevor D</p>
+
+	<footer>
+		<p>Creative Commons attributions:</p>
+
+		<p>Globe image by Shadowxfox, based on map by (B1mbo) - This file was derived from:  Continentes Wikiviajes.svg, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=64667555</p>
+
+		<p>Africa background image by Communication2iE - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=11130377</p>
+
+		<p>Antarctica background image By Liam Quinn - Flickr: Waterboat Point, Antarctica, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=16378823</p>
+
+		<p>Asia background image by Pauloleong2002 - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=86554553</p>
+
+		<p>Australia background image by Simon_sees from Australia - Twilight traffic, CC BY 2.0, https://commons.wikimedia.org/w/index.php?curid=24471539</p>
+
+		<p>Europe background image by Joseolgon - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=92240774</p>
+
+		<p>North America background image by Jaime Alexader Imbaquingo Castro - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=26434223</p>
+
+		<p>South America background image by bobistraveling - 051 People Uros Islands of Reeds Lake Titicaca Peru 3102, CC BY 2.0, https://commons.wikimedia.org/w/index.php?curid=63648723</p>
+ </footer>
+</div>
+</body>
+</html>

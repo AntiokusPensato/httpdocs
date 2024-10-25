@@ -1,0 +1,238 @@
+/*
+Theme Name: WCMD Child
+Theme URI: https://tdavis.bitweb1.nwtc.edu/wcmd
+
+Author: Trevor Davis
+Author URI: https://tdavis.bitweb1.nwct.edu
+
+Description: NWTC Web Contentent Management Design - Web CMD Child Theme
+Tags: two-columns
+
+Template: wcmd
+
+Version: 9999
+
+Requires at least: 5.0
+Tested up to: 6.0
+Requires PHP: 7.0
+
+License: GNU GPU
+License URI: https://www.gnu.org/licenses/gpl-3.0.txt
+
+Text Domain: wcmd-child
+
+General comments (optional).
+*/
+
+:root {
+    --font-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    --color-main: hsl(200, 70%, 30%); 
+    --color-main-a20: hsla(200, 70%, 30%, .2);
+    --color-main-a40: hsla(200, 70%, 30%, .4);
+    --color-main-a60: hsla(200, 70%, 30%, .6);
+    --color-main-a80: hsla(200, 70%, 30%, .8);
+    --color-font-dark: hsl(30, 60%, 25%); 
+    --color-font-light: hsl(40, 30%, 95%); 
+    --color-font-light-a40: hsla(40, 30%, 95%, .4);
+    --color-font-light-a60: hsla(40, 30%, 95%, .6);
+    --color-font-light-a80: hsla(40, 30%, 95%, .8);
+    --color-accent: hsl(180, 50%, 40%); 
+    --nav-main-height: 64px;
+    --grid-columns-12: repeat(12, 1fr);
+    --grid-columns-8: repeat(8, 1fr);
+    --grid-gap: 20px;
+    --grid-gap-half: calc(var(--grid-gap) * .5);
+}
+
+body {
+    background-color: hsl(44, 48%, 91%); 
+    color: var(--color-font-dark);
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    background-color: var(--color-main);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+
+/* Navigation */
+
+.nav-main, .nav-sub {
+    background-color: hsl(200, 60%, 20%); 
+}
+
+.nav-main {
+    margin-bottom: 10px;
+    border-bottom-right-radius: 20px;
+}
+
+.nav-main ul a,
+.nav-sub ul a {
+    transition: all .6s ease;
+    position: relative;
+}
+
+.nav-main ul a:hover,
+.nav-sub ul a:hover,
+.nav-main .current-menu-item a,
+.nav-sub .current-menu-item a {
+    border-bottom-color: var(--color-accent);
+}
+
+.nav-main ul a::after,
+.nav-sub ul a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--color-accent);
+    transition: all 0.3s ease;
+}
+
+.nav-main ul a:hover::after,
+.nav-sub ul a:hover::after,
+.nav-main .current-menu-item a::after,
+.nav-sub .current-menu-item a::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Cards */
+
+.cards .card {
+    background-color: hsl(40, 35%, 93%); 
+    border-color: hsl(30, 30%, 60%); 
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.cards .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cards .card-section-button {
+    background-color: var(--color-accent);
+    color: var(--color-font-light);
+    border-color: var(--color-main);
+}
+
+.cards .card-section-button:hover {
+    background-color: hsl(180, 50%, 35%);
+    transform: scale(1.05);
+}
+
+/* Pagination */
+
+.page-numbers .page-numbers {
+    background-color: hsl(200, 50%, 85%); 
+    color: var(--color-main);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.page-numbers .page-numbers:not(span):hover,
+.page-numbers .page-numbers.current {
+    background-color: var(--color-main);
+    color: var(--color-font-light);
+}
+
+/* Tag Cloud */
+
+.wp-block-tag-cloud {
+    background-color: hsl(200, 70%, 95%);
+    border-radius: 40px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-image: none;
+}
+
+.wp-block-tag-cloud:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.wp-block-tag-cloud a {
+
+    margin: 0.3rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-main-a20);
+    color: var(--color-main);
+    border-radius: 20px;
+    font-size: 0.9rem !important;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.wp-block-tag-cloud a:hover {
+    background-color: var(--color-main);
+    color: var(--color-font-light);
+    transform: translateY(-2px);
+}
+
+/* Comments Section */
+
+.wp-block-latest-comments__comment {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: hsl(40, 80%, 84%);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.wp-block-latest-comments__comment-excerpt {
+    padding: 10px;
+    background-color: hsl(200, 70%, 95%); 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.wp-block-latest-comments__comment-excerpt p {
+    margin: 0;
+}
+
+.wp-block-latest-comments__comment-meta {
+    font-size: 1em;
+    color: hsl(30, 42%, 39%);
+}
+
+/* Footer */
+
+.footer-lower {
+    background-color: hsl(30, 50%, 20%); 
+    padding: 1rem 0 .5rem 0;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.nav-footer {
+    margin: 0;
+}
+.nav-footer li {
+    background-color:hsl(28, 21%, 33%);
+    color: var(--color-font-dark);
+    margin: 0 .5rem;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    header h1 {
+        grid-column: span 12;
+    }
+}

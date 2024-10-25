@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Background Properties</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <header>
+            <h1>CSS Background Properties</h1>
+        </header>
+
+        <main>
+
+            <section>
+                <div class="background-position"></div>
+                <h2>Background Position</h2>
+                <p>background-position sets the initial position for each background image. This image demonstrates centering of the background image. You could also use left, top, 25% 75%, or values like bottom 30px right 80px which is an offset value as demonstrated below. There are multiple value syntax available. 1, 2, 3, and 4 value. </p>
+            </section>
+
+            <section>
+                <div class="background-attachment"></div>
+                <h2>Background Attachment</h2>
+                <p>background-attachment sets wether a background image's position is fixed within the viewport, or scrolls with its containing block. This image shows how a fixed background behaves on scrolling. There are three values for background-attachment - fixed, local, and scroll.</p> <ul><li>Fixed: Is relative to viewport. If an element has a scrolling mechanism the background doesn't move.</li><li>Local: Background is fixed relative to the element's contents. If the element has a scrolling the background will scroll with the element's contents.</li><li>Scroll: Background is fixed relative to the element itself it does not scroll with its contents. It is basically attached to the element's border.</li></ul>
+            </section>
+
+            <section>
+                <div class="background-size"></div>
+                <h2>Background Size</h2>
+                <p>background-size sets the size of the element's background image. The image can be left to its normal size, stretched, or constrained to fit the available space. This background covers the entire section. Spaces not covered by a background image are filled with the background-color property, and the background color will be visible behind background images that have transparency. To specify the size of multiple background images, separate the value for each one with a comma. There are 5 values.</p><ul><li>Contain: Scales the image as large as possible within the container without cropping or stretching. If the container is larger than the image you will get image tiling unless the background-repeat property is set to no-repeat.</li><li>Cover: Preserves the image ratio while scaling to the smallest possible size to fill the container, leaving no empty space.</li><li>Auto: Scaled the background image in the corresponding direction such that its intrinsic proportions are maintained.</li><li>Length: Stretches the image in the corresponding dimension to the specified length. Negative values not allowed.</li><li>Percentages: Stretches the image to the specified percentage of the background positioning area.</li></ul>
+            </section>
+
+            <section>
+                <div class="background-edge-offset"></div>
+                <h2>Background - Edge Offset Value</h2>
+                <p>This background demonstrates offsetting from the edges using x/y values.</p>
+            </section>
+
+            <section>
+                <div class="background-multiple"></div>
+                <h2>Multiple Backgrounds</h2>
+                <p>Illustrates layering of an overlay image on top of a background image. You can use both the shorthand background property and the individual properties except for background-color. You can stack images, first image is on top while last is on bottom.</p>
+            </section>
+
+            <section>
+                <h2>Summary</h2>
+                <p>The CSS background properties allow for control over an element's background, from image placement and sizing to attachment behavior and the stacking of multiple images or colors. Understanding and utilizing these properties can significantly enhance the design and user experience of web content.</p>
+            </section>
+
+            <section>
+                <h2>Attribution</h2>
+                <p>rain PNG Designed By 琪琪 from https://pngtree.com/freepng/rain-rain-raindrops-falling-raindrops-weather_7713686.html?sol=downref&id=bef
+                    <a href='https://pngtree.com/freepng/rain-rain-raindrops-falling-raindrops-weather_7713686.html'>png image from pngtree.com/</a>
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <a href="/wfed1/index.html">&copy; 2024 - Trevor</a>
+            <a href="javascript:location='https://jigsaw.w3.org/css-validator/validator?uri='+escape(location)">CSS</a>
+            <a href="javascript:location='https://validator.w3.org/nu/?doc='+escape(location)">HTML</a>
+        </footer>
+    </div>
+
+</body>
+
+</html>

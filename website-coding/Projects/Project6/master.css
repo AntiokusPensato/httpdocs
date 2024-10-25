@@ -1,0 +1,154 @@
+html {
+      background-color: #5E6D55;
+  }
+  
+  
+  * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+  }
+  
+  body {
+      font-family: Arial, sans-serif;
+  }
+  
+  .wrapper {
+      background: linear-gradient(to bottom, #666666, #555555);
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+      box-shadow: 2px 2px 15px #332b14;
+      border-radius: 15px;
+  }
+  
+  header {
+      text-align: center;
+      padding: 20px;
+      background-color: #c9be99;
+      border-radius: 15px;
+      margin-bottom: 20px;
+  }
+  
+  header img {
+      max-width: 100%;
+      height: auto;
+  }
+  
+  ul {
+      list-style-type: none;
+  }
+  
+  .species {
+      background-color: #475577;
+      border-radius: 20px;
+      color: #ccca89;
+      font-size: 125%;
+      padding: 3px;
+}
+
+  .container {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  nav, .right-content {
+      padding: 15px;
+  }
+  
+  #navbar {
+      width: 100%;
+      height: auto;
+      padding: 20px 10px;
+      box-sizing: border-box;
+  }
+  
+  .navbar-home#navbar a {
+  width: 70%;
+  }
+  
+  #navbar a {
+      display: block;
+      background-color: #c9be99; 
+      color: #333;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 15px;
+      cursor: pointer;
+      width: 100%; 
+      margin-bottom: 10px;
+      font-size: 14px;
+      white-space: normal;
+      text-align: center;
+      text-decoration: none;
+  }
+  
+  #navbar a:hover {
+      background-color: #a67c52; 
+  }
+  
+  .gallery-header {
+      text-align: center;
+      font-size: 24px;
+      color: black;
+      margin-bottom: 20px;
+  }
+  
+  .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+  }
+                 
+  .gallery a img {
+      width: 100%;
+      height: auto;
+      border: 10px solid #475577;
+      border-radius: 10px;
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  
+  }
+  
+  .animalgallery img {
+      width: 70%;
+      height: auto;
+      border: 10px solid #475577;
+      border-radius: 10px;
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  #animals {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 15px;
+  }
+  
+  footer {
+      text-align: center;
+      padding: 20px;
+      color: #fff;
+      font-size: 16px;
+  }
+  
+  @media (min-width: 700px) {
+      .container {
+          flex-direction: row;
+      }
+      nav {
+          flex: 1;
+      }
+      .right-content {
+          flex: 2;
+      }
+  }
+  @media (min-width: 1000px) {
+      .wrapper {
+          margin: auto;
+      }
+      #navbar {
+          width: 700px;
+      }
+      .gallery a {
+          flex: 1 1 calc(33.333% - 10px);
+      }
+  }

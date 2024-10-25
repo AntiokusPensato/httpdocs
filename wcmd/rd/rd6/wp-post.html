@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WP_Post Object</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>WP_Post Object</h1>
+        </header>
+
+        <main>
+            <section>
+                <h2>WP_Post Object Summary</h2>
+                <p><code>WP_Post</code> represents a single page or post. It holds all the information related like content, metadata, and attributes. This is how WordPress interacts with and siplays post data.</p>
+            </section>
+
+            <section>
+                <h2>WP_Post Object Data</h2>
+                <p>Theres a ton of data held in <code>WP_post</code>. There are quite a few more then im listing here. </p>
+                <ul>
+                    <li><strong>ID:</strong> The identifier of a post.</li>
+                    <li><strong>post_author:</strong> The user who created the post.</li>
+                    <li><strong>post_date:</strong> Date and time of when the post was made.</li>
+                    <li><strong>post_content:</strong> Content of the post.</li>
+                    <li><strong>post_title:</strong> Title of the post.</li>
+                    <li><strong>post_status:</strong> Current status of a post such as if it were private.</li>
+                    <li><strong>post_password:</strong> Password to view a post if it is password protected.</li>
+                    <li><strong>to_ping:</strong> A list of sites to ping when the post is updated.</li>
+                    <li><strong>post_parent:</strong> ID of the parent post if there is one.</li>
+                    <li><strong>menu_order:</strong> The order of the post in custom lists.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>WP_post role in Page Load</h2>
+                <p>WP_post is just a container holding information about posts or pages. WordPress goes through a process when someone visits your site.</p>
+                <ol>
+                    <li><strong>Finding Content:</strong> Wordpress first figures out what content it needs to show when someone visits your site.</li>
+                    <li><strong>Grab Content:</strong> WordPress then grabs information about that content from its database.</li>
+                    <li><strong>Packing Content:</strong> It then takes that informations and packs it into a <code>WP_post</code> object.</li>
+                    <li><strong>Making Content Available:</strong> Then Wordpress WP_post object available to use on your site.</li>
+                    <li><strong>Using the Content:</strong> Now your theme can unpack all that data to display things such as the content and author.</li>
+                    <li><strong>Handling Multiple Posts:</strong> If a page needs to show more than one post WordPress will create multiple <code>WP_post</code> objects so your theme can load them one by one.</li>
+                    <li><strong>Adding Extras:</strong> Plugins can use <code>WP_post</code> objects to add features to your pots like social media buttons.</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Summary</h2>
+                <p>Seems like <code>WP_post</code> is like a box or a bag storing all the info about pages and posts on a WordPress site. Every time someone visits your site WordPress grabs <code>WP_post</code> to show all the right information on the page. It helps WordPress find and display information quickly.</p>
+            </section>
+
+            
+        </main>
+
+        <footer>
+            <a href="/wfed1/index.html">&copy; 2024 - Trevor</a>
+            <a href="javascript:location='https://jigsaw.w3.org/css-validator/validator?uri='+escape(location)">CSS</a>
+            <a href="javascript:location='https://validator.w3.org/nu/?doc='+escape(location)">HTML</a>
+        </footer>
+    </div>

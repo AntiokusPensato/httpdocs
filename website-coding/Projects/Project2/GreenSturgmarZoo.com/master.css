@@ -1,0 +1,25 @@
+html {
+  background-color: #5E6D55}
+}
+
+body {
+  background-color: #e34207;
+  color: #ab7e4c;
+  font-family: "Times New Roman", sans-serif;
+}
+
+#businessname {
+    color: #eab676;
+    background-color: #4c3c30;
+    font-family: fantasy;
+}
+
+#headercolor {
+  background-color: #ab7e4c;
+}
+
+.species {
+  background-color: #613e1e;
+  color: #ccca89;
+  font-size: 125%
+}

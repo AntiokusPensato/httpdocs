@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordpress Search</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Wordpress Search</h1>
+        </header>
+
+        <main>
+            <section>
+                <h2>Wordpress Search Functionality</h2>
+                <p>WordPress has a built in search functionality allowing anyone to find content inside a site. By default it searches through post and page titles, post and page content, excerpts, and custom posts and content. It will not search for comments, tag names, or category names. You are able to add that through plugins though.</p>
+                <p>Searches are done though an SQL query based off of the search terms. Once a search has been performed the results get displayed by using your theme's search results template, in our case search.php.</p>
+            </section>
+
+            <section>
+                <h2>The Role of URI</h2>
+                <p>URI stands for Uniform Resource Identifier. Which is a string of characters identifying things like a website or file. WordPress has a default structure of <code>/?s=search+term</code>. The term within the URI can be used to highlight matching content or display the search term within the search form. This format also is less attractive to search engine crawlers. </p>
+            </section>
+
+            <section>
+                <h2>Current/Active Search Terms</h2>
+                <p>You can show the current or active search term in the search form field after the search is performed. You do this by adding a value attribute to the search input field that echoes the current search term using PHP. Example:</p>
+    <code>&lt;input type="search" name="s" value="&lt;?php echo get_search_query(); ?&gt;" placeholder="Search..."&gt;</code>
+    <p>This gets the search term using WordPress's <code>get_search_query()</code> function and displays it in the search form, which lets people see and modify their current search.</p>
+            </section>
+
+            <section>
+                <h2>Summary</h2>
+                <p>WordPress search functionality is a great feature that allows site visitors to find content within your site. The search query is show in the URI which WordPress uses to generate results. While the default search is good you can use filters or plugins to expand your needs.</p>
+            </section>
+
+            
+        </main>
+
+        <footer>
+            <a href="/wfed1/index.html">&copy; 2024 - Trevor</a>
+            <a href="javascript:location='https://jigsaw.w3.org/css-validator/validator?uri='+escape(location)">CSS</a>
+            <a href="javascript:location='https://validator.w3.org/nu/?doc='+escape(location)">HTML</a>
+        </footer>
+    </div>

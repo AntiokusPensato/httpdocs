@@ -1,0 +1,4 @@
+Options -indexes
+
+ErrorDocument 403 /php-final-exam/final-exam.php
+ErrorDocument 404 /php-final-exam/final-exam.php

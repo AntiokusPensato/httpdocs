@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Extract UI Items</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/screen.css">
+    <script src="https://buchholz.bitweb1.nwtc.edu/api/wfed1/a01/script.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header>
+            <h1>Extract UI Items</h1>
+        </header>
+
+        <section class="post">
+            <figure class="post-featured-image">
+                <a href="images/quick-start-instructions-code.webp">
+                    <img src="images/quick-start-instructions-ui.webp" alt="Quick Start Instructions">
+                </a>
+                <figcaption>Quick Start Instructions UI</figcaption>
+            </figure>
+            <div class="post-content">
+                <h2><a href="https://jekyllrb.com">Quick Start Instructions UI</a></h2>
+                <h3>UI Item - Summary</h3>
+                <p>I think the floating box over the maroon bar stands out and draws you in. </p>
+                <h3>UI Item - Techniques</h3>
+                <p>They used several different CSS Techniques on this element. They have padding, text shadows, margin, background color, border radius, box shadow, and they use float as well as display: block. The whole quickstart section is made up of several elements, grid, unit golden small and large, then the shell.</p>
+            </div>
+        </section>
+
+        <section class="post">
+            <figure class="post-featured-image">
+                <a href="images/docs-wraparound-code.webp">
+                    <img src="images/docs-wraparound-ui.webp" alt="Wraparound UI">
+                </a>
+                <figcaption>Wraparound UI</figcaption>
+            </figure>
+            <div class="post-content">
+                <h2><a href="https://jekyllrb.com/docs/">Jekyllrb Docs</a></h2>
+                <h3>UI Item - Summary</h3>
+                <p>The visual of it wrapping back behind the grey is neat. As well as the gradient flowing horizontally. </p>
+                <h3>UI Item - Techniques</h3>
+                <p>It looks like they used the ::before and ::after pseudo elements to create the icons on the note bars as well as the small triangle that gives it the appearance of wrapping back behind the grey. I don't quite understand content: "". When deselecting it in the developer tools this removes the triangle but from my research the triangle is built with the border property with top: -10px making it appear above the colored rectangle which then makes the appearance of the wrap around. They also used box shadow to help with the wrap around feel making the colored box appear to be laying on top of the grey. Then a simple gradient of two colors from top to bottom.  </p>
+            </div>
+        </section>
+
+        <section class="post">
+            <figure class="post-featured-image">
+                <a href="images/nav-code.webp">
+                    <img src="images/nav-ui.webp" alt="Nav Buttons">
+                </a>
+                <figcaption>Navigation UI</figcaption>
+            </figure>
+            <div class="post-content">
+                <h2><a href="https://jekyllrb.com">Navigation Hover</a></h2>
+                <h3>UI Item - Summary</h3>
+                <p>I liked how when hovering the button looks indented as well as the text color changing.</p>
+                <h3>UI Item - Techniques</h3>
+                <p>As I looked over the code I could not figure out how the hover changes were being made. I thought normally it was done by using the :hover selector then maybe transition-duration or something like box-shadow. Turns out they used SCSS I did find it in the SCSS files within the developer tools.  Looks like the effect was created using a new background color as well as an inset box shadow and some text shadow. <pre>&:hover {
+                    background-color: #252525;
+                    @include box-shadow(inset 0 1px 3px rgba(0,0,0,.5), 0 1px 0 rgba(255,255,255,.1));
+                    text-shadow: 0 1px 3px rgba(0,0,0,.5);
+                  }</pre>
+            </div>
+        </section>
+
+        <section class="post">
+            <figure class="post-featured-image">
+                <a href="images/arrow-code.webp">
+                    <img src="images/arrow-ui.webp" alt="Arrow UI">
+                </a>
+                <figcaption>Arrow UI</figcaption>
+            </figure>
+            <div class="post-content">
+                <h2><a href="https://jekyllrb.com">Arrow UI</a></h2>
+                <h3>UI Item - Summary</h3>
+                <p>The large end arrow that flows out of the box and points to the GitHub link is pretty cool.</p>
+                <h3>UI Item - Techniques</h3>
+                <p>This one uses the ::after pseudo element. Still don't understand the blank quotes in the content tag. Otherwise float right was used with the image of the arrow as the background element. The positioning was accomplished with position absolute, right 0, and bottom -38px.</p>
+            </div>
+        </section>
+
+        <footer>
+            <a href="javascript:location='https://jigsaw.w3.org/css-validator/validator?uri='+escape(location)">CSS</a>
+            <a href="javascript:location='https://validator.w3.org/nu/?doc='+escape(location)">HTML</a>
+        </footer>
+        
+    </div>
+        
+</body>
+
+</html>

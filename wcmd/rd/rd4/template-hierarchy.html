@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordpress Template Hierarchy</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Wordpress Template Hierarchy</h1>
+        </header>
+
+        <main>
+            <section>
+                <h2>What is the Template Hierarchy System?</h2>
+                <p>This hierarchy system determines which template file is going to be used to display a specific page on your WordPress site. This gives a structure for WordPress to pick which template file when rendering different types of content.</p>
+            </section>
+
+            <section>
+                <h2>Template Order</h2>
+                <p>The order wordpress follows when selecting a template file is:</p>
+                    <ol>
+                        <li>First it looks for template files that match a specific or current page.</li>
+                        <li>Then, if it does not find specific template it moves on to general templates you may have.</li>
+                        <li>Lastly, if no matching templates are found WordPress will fall back to the most generic or default template it has available to it.</li>
+                    </ol>
+                <p>For example I used the Donate and Donar Recognition page for the assignment so it would look like this:</p>
+                    <ol class="example">
+                        <li><strong>Custom template file:</strong> page_full-width.php</li>
+                        <li>page-{donate}.php</li>
+                        <li>page-{id}.php <em>(For Donor Recognition it would be 90)</em></li>
+                        <li>page.php</li>
+                        <li>single.php</li>
+                        <li>index.php</li>
+                    </ol>
+            </section>
+
+            <section>
+                <h2>File Naming Conventions</h2>
+                <p>Some examples would be:</p>
+                    <ul class="example">
+                        <li><strong>Author templates:</strong> author-{trevor}.php or author-{id}</li>
+                        <li><strong>General templates:</strong> index.php, archive.php, single.php, page.php</li>
+                        <li><strong>Category templates:</strong> category-{slug}.php and category-{id}.php</li>
+                        <li><strong>Date templates:</strong> date.php, month.php, day.php, year.php</li>
+                    </ul>
+            </section>
+
+            <section>
+                <h2>ID vs. Slug</h2>
+                <p>The difference between ID and Slug is that ID is a numeric identifier so a page template would be page-23.php. While a Slug is a text-based identifier so in my case I did page-donate.php. Wordpress prioritizes slug based filenames over ID base ones which I think adds more readability.</p>
+            </section>
+
+          <section>
+            <h2>Summary</h2>
+            <p>With template hierarchy its a "find the right file" thing. We could have many templates that alter how our sites look so WordPress goes through that checklist or hieararchy to figure out which template to use. It starts of specific then goes down to general. WordPress prefers word versions because it is easier for humans to understand. Without a matching template it will use the default.</p>
+          </section>
+
+            
+        </main>
+
+        <footer>
+            <a href="/wfed1/index.html">&copy; 2024 - Trevor</a>
+            <a href="javascript:location='https://jigsaw.w3.org/css-validator/validator?uri='+escape(location)">CSS</a>
+            <a href="javascript:location='https://validator.w3.org/nu/?doc='+escape(location)">HTML</a>
+        </footer>
+    </div>
+</body>
+
+</html>

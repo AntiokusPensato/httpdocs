@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity - A11Y</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <header>
+            <h1>Specificity - A11Y</h1>
+        </header>
+
+        <main>
+            <section>
+                <h2>CSS Specificity</h2>
+                <p>Specificity is a set of rules to resolve conflicts when multiple CSS rules apply to an element. The specificity algorithm calculates the weight of a CSS selector to determine which rule from competing CSS declarations gets applied to an element.</p>
+                <p>Specificity is calculated by types of selectors. This is Inline styles, ID selectors, Class selectors, and then Element and pseudo-element selectors. There is a four part value.</p>
+                    <ul>
+                    <li>Inline styles count as (1,0,0,0)</li>
+                    <li>Each ID value as (0,1,0,0)</li>
+                    <li>Each class, attribute, and pseudo-class as (0,0,1,0)</li>
+                    <li>Each element and pseudo-element as (0,0,0,1)</li>
+                    </ul>
+                <p>When two rules conflict, the one with the higher specificity wins. If specificity is the same, the latest rule in the CSS is applied due to the cascading nature of CSS.</p>
+            </section>
+
+            <section>
+                <h2>Contrast Ratios</h2>
+                <p>Contrast ratios represent the difference in brightness between two colors. This provides a measure of how easy it is to distinguish text or other visual elements from their background. There are two success criteria. Minimum is AA. Which is a contrast ratio of at least 4.5:1 and heading text should have a ratio of at least 3:1. Enhanced contrast is AAA, this builds off of AA. Text and its background should have a contrast ratio of at least 7:1. Heading text should have a tratio of at least 4.5:1.</p>
+            </section>
+
+            <section>
+                <h2>Why You Must Meet Contrast Ratios</h2>
+                <p>Meeting contrast ratios is essential for making web content accessible to users with visual impairments, ensuring everyone can see the content effectively. Beyond that you need to be in compliance with web standards as well as there being an ethical reason to ensure the web is accessible to as many people as possible. You don't want to be sued.</p>
+            </section>
+
+            <section>
+                <h2>Who Sets Accessibility Rules</h2>
+                <p>The group within the W3C (World Wid Web Consortium) that sets accessibility rules is the WAI (Web Accessibility Initiative) They work to ensure that the web supports people with disabilities, this goes with a wide range of impairments such as visual, auditory, physical, speech, cognitive, and neurological disabilities. WAI develops guidelines regarded as the international standard for web accessibility. The most well know is WCAG (Web Content Accessibility Guidelines). Theres also ATAG (Authoring Tool Accessibility Guidelines) and UAAG (User Agent Accessibility Guidelines). </p>
+            </section>
+
+            <section>
+                <h2>Summary</h2>
+                <p>CSS specificity is just a rulebook for deciding which styles show up on a website when there's a clash between different styles, ranking them from most important to least. Making sure text and background colors have good contrast is important so everyone can read the content easily. This is part of a bigger set of rules called WCAG, made by W3C, which is all about making sure websites are usable for as many people as possible. These rules help make the internet a friendlier place for everyone, no matter how they see or interact with the web.</p>
+            </section>
+
+            
+        </main>
+
+        <footer>
+            <a href="/wfed1/index.html">&copy; 2024 - Trevor</a>
+            <a href="javascript:location='https://jigsaw.w3.org/css-validator/validator?uri='+escape(location)">CSS</a>
+            <a href="javascript:location='https://validator.w3.org/nu/?doc='+escape(location)">HTML</a>
+        </footer>
+    </div>
+</body>
+
+</html>
