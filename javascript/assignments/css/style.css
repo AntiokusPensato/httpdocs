@@ -1,17 +1,16 @@
-/* Color Scheme */
 :root {
-    --primary-color: #2d4f3c;         
-    --secondary-color: #d4a373;       
-    --accent-color: #bb9457;          
-    --background: #faf6f1;            
-    --box: #c1c8b4c6;               
-    --text-primary: #2c3028;          
-    --text-secondary: #5c6760;        
-    --accent-light: #e9edc9;          
-    --accent-medium: #ccd5ae;         
-    --shadow-color: rgb(45 79 60 / 0.1);
-    --gradient-start: #2d4f3c;       
-    --gradient-end: #588b76;          
+    --primary-color: #9B4F3C;     
+    --secondary-color: #D68B77;   
+    --accent-color: #DEB99D;      
+    --background: #FDF6EC;        
+    --box: #ffffff;               
+    --text-primary: #533329;      
+    --text-secondary: #6B5550;    
+    --accent-light: #F9EDE4;      
+    --accent-medium: #F3DFD2;     
+    --shadow-color: rgb(155 79 60 / 0.1);
+    --gradient-start: #9B4F3C;    
+    --gradient-end: #D68B77;        
 }
 
 /* Fonts */
@@ -29,8 +28,8 @@ body {
     color: var(--text-primary);
     background-color: var(--background);
     background-image: 
-        radial-gradient(circle at top right, #e9edc980 20%, transparent 40%),
-        radial-gradient(circle at bottom left, #ccd5ae80 20%, transparent 40%);
+        radial-gradient(circle at top right, #e39f8c80 20%, transparent 40%),
+        radial-gradient(circle at bottom left, #DEB99D80 20%, transparent 40%);
     background-attachment: fixed;
 }
 
@@ -69,7 +68,7 @@ h1::before {
     width: 60px;
     height: 60px;
     background-color: var(--accent-medium);
-    opacity: 0.4;
+    opacity: 0.5;
     border-radius: 50%;
     top: -40px;
     left: -55px;
@@ -351,71 +350,3 @@ footer :first-child {
         padding: 1rem;
     }
 }
-
-/* Template Code for reference
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: sans-serif;
-    display: grid;
-    grid-template-columns: minmax(auto, 1024px);
-    justify-content: center;
-    margin: 0 10px;
-}
-
-.wrapper {
-    display: grid;
-    gap: 20px
-}
-
-nav,
-footer {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-nav a,
-footer a {
-    line-height: 2;
-    padding: 0 1em;
-    background: lightgray;
-}
-
-nav :first-child,
-footer :first-child {
-    margin-right: auto;
-}
-
-p,
-li {
-    max-width: 70ch;
-    line-height: 1.8;
-}
-
-@media screen and (min-width: 768px) {
-    .wrapper {
-        grid-template-columns: repeat(6, 1fr);
-    }
-
-    header,
-    nav,
-    footer {
-        grid-column: span 6;
-        flex-direction: row;
-    }
-
-    main {
-        grid-column: span 4;
-    }
-
-    aside {
-        grid-column: span 2;
-    }
-} */
