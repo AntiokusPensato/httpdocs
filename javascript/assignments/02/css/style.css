@@ -1,16 +1,17 @@
 :root {
-    --primary-color: #B8860B;
-    --secondary-color: #DAA520;
-    --accent-color: #F4C430;
-    --background: #FFFAF0;
-    --box: #ffffff;
-    --text-primary: #704214;
-    --text-secondary: #8B4513;
-    --accent-light: #FFF8DC;
-    --accent-medium: #FFE4B5;
-    --shadow-color: rgb(184 134 11 / 0.1);
-    --gradient-start: #B8860B;
-    --gradient-end: #DAA520;      
+    --primary-color: #FFD700;
+    --secondary-color: #FFA500;
+    --accent-color: #E6B800;
+    --background: #1A1A1A;
+    --box: #2A2A2A;
+    --text-primary: #FFFFFF;
+    --text-secondary: #CCCCCC;
+    --accent-light: #3A3A3A;
+    --accent-medium: #333333;
+    --shadow-color: rgb(0 0 0 / 0.3);
+    --gradient-start: #FFD700;
+    --gradient-end: #FFA500; 
+    --visited: #8560d0;   
 }
 
 /* Fonts */
@@ -31,6 +32,9 @@ body {
         radial-gradient(circle at top right, #e39f8c80 20%, transparent 40%),
         radial-gradient(circle at bottom left, #DEB99D80 20%, transparent 40%);
     background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Wrapper Styles*/
@@ -38,9 +42,10 @@ body {
 .wrapper {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 0 2rem;
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
 /* Header Styles*/
@@ -133,7 +138,7 @@ a {
 }
 
 a:visited {
-    color: var(--primary-color);
+    color: var(--visited);
 }
 
 a:hover,
@@ -165,7 +170,7 @@ nav a:hover::after {
 
 main {
     flex: 1;
-    margin: 8%;
+    margin: 2%;
 }
 
 h2 {
@@ -248,6 +253,17 @@ aside li:hover {
 /* Footer Styles */
 
 footer {
+    background-color: var(--box);
+    padding: 1.5rem;
+    border-radius: 1rem 1rem 0 0;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 8px 30px var(--shadow-color);
+}
+
+/* footer {
     display: flex;
     flex-wrap: wrap;
     gap: 10;
@@ -255,7 +271,7 @@ footer {
     border-radius: 1rem 1rem 0 0;
     border: 3px solid var(--accent-medium);
     box-shadow: 0 4px 20px var(--shadow-color);
-}
+} */
 
 footer a {
     line-height: 2;
