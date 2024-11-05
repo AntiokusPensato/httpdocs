@@ -228,6 +228,45 @@ h2 {
     border-radius: 0 1rem 1rem 0;
 }
 
+/* Table Styles */
+
+table {
+    width: 100%;
+    background-color: var(--box);
+    border-radius: 1rem;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    box-shadow: 20px 20px 30px var(--shadow-color);
+    border: 2px solid var(--accent-medium)
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--accent-medium);
+    color: var(--text-secondary);
+}
+
+th {
+    color: var(--primary-color);
+    font-weight: 700;
+    width: 30%;
+    background-color: var(--accent-light);
+}
+
+tr:last-child th,
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover {
+    background-color: var(--accent-light);
+}
+
+#boardFeet {
+    color: var(--accent-color);
+    font-weight: 700;
+}
 /* Aside Styles */
 
 aside {
