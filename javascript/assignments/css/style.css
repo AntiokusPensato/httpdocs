@@ -1,3 +1,6 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap');
+
 :root {
     --primary-color: #9B4F3C;     
     --secondary-color: #D68B77;   
@@ -12,9 +15,6 @@
     --gradient-start: #9B4F3C;    
     --gradient-end: #D68B77;        
 }
-
-/* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap');
 
 /* Base Styles */
 * {

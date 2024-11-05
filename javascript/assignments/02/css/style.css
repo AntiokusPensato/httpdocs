@@ -1,3 +1,6 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap');
+
 :root {
     --primary-color: #FFD700;
     --secondary-color: #FFA500;
@@ -11,11 +14,8 @@
     --shadow-color: rgb(0 0 0 / 0.3);
     --gradient-start: #FFD700;
     --gradient-end: #FFA500; 
-    --visited: #8560d0;   
+    --visited: #d1645f;   
 }
-
-/* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap');
 
 /* Base Styles */
 * {
@@ -40,7 +40,7 @@ body {
 /* Wrapper Styles*/
 
 .wrapper {
-    max-width: 1400px;
+    /* max-width: 1400px; */
     margin: 0 auto;
     padding: 0 2rem;
     display: flex;
@@ -190,8 +190,17 @@ h2 {
     font-size: 1rem;
 }
 
+.intro p {
+    margin-bottom: .5rem;
+}
+
 .intro h2 {
     padding: 1rem;
+}
+
+.intro h3 {
+    margin-bottom: .5rem;
+    color: var(--primary-color);
 }
 
 .main-lists {
