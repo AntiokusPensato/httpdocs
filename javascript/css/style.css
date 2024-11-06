@@ -249,7 +249,7 @@ aside li:hover {
 footer {
     display: flex;
     flex-wrap: wrap;
-    gap: 10;
+    gap: 10px;
     background-color: var(--box);
     border-radius: 1rem 1rem 0 0;
     border: 3px solid var(--accent-medium);
