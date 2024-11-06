@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Specification</title>
+    <link rel="stylesheet" href="/javascript/research-documentation/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>DOM Specification</h1>
+        </header>
+
+        <main>
+            <h2>Define/Explain the DOM</h2>
+            <p>The DOM or Document Object Model is a programming API for HTML and XML documents. It is a structural representation of where things are in an HTML document. The elements, attributes and such become nodes in a tree-like structure. So the DOM acts as a bridge between your web pages and programming languages such as Javascript. This enables dynamic web pages and provides a standard way to access an dmodify document elements. </p>
+
+            <h2>DOM Specifications</h2>
+            <p>The World Wide Web Consortium or W3C is responsible for the DOM specifications. It looks like there are 3 levels to this.</p>
+            <ul>
+                <li>DOM Level 1: Released in 1998</li>
+                <li>DOM Level 2: Released in 2000</li>
+                <li>DOM Level 3: Released in 2004</li>
+            </ul>
+            <p>The current version is maintained as a "living standard" which means it is constantly updated rather than using version numbers.</p>
+            <p>With these specifications the goal is to ensure standardized implementation, consistent behavior, and cross-browser compatibility.</p>
+            
+            <h2>DOM Implementation in Browsers</h2>
+            <p>Browsers implement the DOM by creating rendering engines that follow the W3C specifications.</p>
+            <h3>Current Browser Engines</h3>
+            <ul>
+                <li>Chrome: Blink</li>
+                <li>Safari: Webkit</li>
+                <li>Firefox: Gecko</li>
+                <li>Edge: Blink</li>
+                <li>Opera: Blink</li>
+            </ul>
+            <p>The engine uses parsing then rendering to implement the DOM. Parsing converts HTML to a DOM tree with node objects. Where rendering basically paints it to the screen.</p>
+            
+            <h2>Summary</h2>
+            <p>The Document Object Model is a crucial web tech that provides a standardized way to interact with HTML and XML documents. Creating a tree-like structure where HTML elements become nodes that can be altered through programmin glanguages such as Javascript. The W3C maintains specifications for the dom which evolved through three levels before becoming a living standard that is continuously updated. Through various browser engines we can use the DOM to create interactive web pages.</p>
+
+            <div class="home-button-container">
+                <a href="/javascript/research-documentation/index.html" class="home-button">R&amp;D Home</a>
+            </div>
+        </main>
+
+        <footer>
+            <a href="https://tdavis.bitweb1.nwtc.edu/">&copy; 2024 - Trevor</a>
+            <a href="javascript:void(location='https://jigsaw.w3.org/css-validator/validator?uri='+escape(location))">CSS</a>
+            <a href="javascript:void(location='https://validator.w3.org/nu/?doc='+escape(location))">HTML</a>
+        </footer>
+    </div>
+</body>
+</html>
