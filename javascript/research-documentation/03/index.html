@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Collection vs NodeList</title>
+    <link rel="stylesheet" href="/javascript/research-documentation/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>HTMLCollection vs NodeList</h1>
+        </header>
+
+        <main>
+            <h2>HTMLCollection</h2>
+            <p>An HTMLCollection is similar to an array. It is a collection of HTML elements. It is a live collection that is updated when the document is updated. It is returned by methods such as <code>document.getElementsByClassName()</code></p>
+            <p>Live means the HTMLCollections are automatically updated to reflect changes in the DOM. They only contain Element nodes and can be accessed using both index numbers and name/id properties.</p>
+
+            <h2>NodeList</h2>
+            <p>A NodeList can either be live or static depending on how it is generated. NodeLists are returned by methods such as: <code>document.querySelectorAll()</code> - Returns a static NodeList and
+            <code>element.childNodes</code> - Returns a live NodeList</p>
+            
+            <h2>Differences and Similarities</h2>
+            <p>The main similarities are that both are array-like objects with a length property, and both let you access items using index numbers. The key difference is that HTMLCollection is always live and only holds elements, while NodeList is more flexible but usually static when you get it from <code>querySelectorAll()</code>.</p>
+            
+            <p>That's really the core difference - HTMLCollection is live and element-only, NodeList is usually static and can contain any node type.</p>
+            
+            <h2>Summary</h2>
+            <p>Both HTMLCollection and NodeList are DOM collection types but serve different purposes. HTMLCollection is specifically for HTML elements while NodeList is more versatile since it handles all node types and can be live or static.</p>
+
+            <div class="home-button-container">
+                <a href="/javascript/research-documentation/index.html" class="home-button">R&amp;D Home</a>
+            </div>
+        </main>
+
+        <footer>
+            <a href="https://tdavis.bitweb1.nwtc.edu/">&copy; 2024 - Trevor</a>
+            <a href="javascript:void(location='https://jigsaw.w3.org/css-validator/validator?uri='+escape(location))">CSS</a>
+            <a href="javascript:void(location='https://validator.w3.org/nu/?doc='+escape(location))">HTML</a>
+        </footer>
+    </div>
+</body>
+</html>
